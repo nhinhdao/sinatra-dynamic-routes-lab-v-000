@@ -12,11 +12,7 @@ class App < Sinatra::Base
    end
 
    get '/say/:number/:phrase' do
-      # binding.pry
-      # @x = params[:number].to_i
-      # @y = params[:phrase]
       params[:number].to_i.times {|i| puts params[:phrase]}
-      # @x.times {|i| puts @y}
       # binding.pry
    end
 
@@ -42,5 +38,3 @@ class App < Sinatra::Base
    end
 
 end
-
-
