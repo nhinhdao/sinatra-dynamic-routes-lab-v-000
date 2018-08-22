@@ -15,7 +15,7 @@ class App < Sinatra::Base
       @x =[];
       # params[:number].to_i.times {|i| puts params[:phrase].to_s}
       params[:number].to_i.times {|i| @x << params[:phrase].to_s}
-      puts @x.join(" ")
+      puts @x.flatten.join(" ")
       # binding.pry
    end
 
